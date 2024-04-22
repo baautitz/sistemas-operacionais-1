@@ -1,0 +1,34 @@
+1. Problema do Camaleão Transportador
+
+Um Camaleão leva refrigerante entre o 
+Centro e a Vila A, mas somente quando o número de refrigerantes acumulados 
+chegar a  50.
+Inicialmente, o Camaleão fica na vila A,esperando que existam 50 refrigerantes
+para carregar, e dormindo  enquanto não houver refrigerantes.
+
+Quando os refrigerantes chegam a 50, o Camaleão deve levar 
+exatamente (nenhum a mais nem a menos) dos 50 refrigerantes
+entre o Centro e a Vila A, e em seguida voltar ao Centro.
+
+Caso existam outros 50 refrigerantes, ele parte imediatamente;
+caso contrário, ele dorme de novo até que existam
+os 50 novos refrigerantes para serem transportados.
+
+Considerações
+Os refrigerantes são fabricados pelas Hienas
+e cada Hiena..
+quando tem um refrigerante pronto (após sua fabricação), coloca o refrigerante
+na mochila do Camaleão. Caso o Camaleão tenha partido,
+ele deve esperar o retorno para colocar mais refrigerantes na mochila do 
+Camaleão.
+
+A Hiena numero 50 deve acordar o Camaleão caso ele esteja 
+dormindo.
+Cada Hiena tem sua fabrica inesgotavel de fabricação de 
+refrigerante, e continuamente prepara um refrigerante para que o Camaleão
+possa levar;
+Usando semáforos, modele o processo do Camalão o 
+processo da Hiena, 
+lembrando que existem muitas Hienas e apenas
+um Camaleão
+Identifique regiões criticas na vida das Hienas e do Camaleão.

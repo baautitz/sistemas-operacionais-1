@@ -1,0 +1,40 @@
+mutex = 1;
+qtdeRefrigerante = 0;
+
+Hiena {
+    while (true) {
+        if (qtdeRefrigerante > 0) {
+            dormir();
+        }
+
+        semaforo_down(mutex);
+        while (qtdeRefrigerante < 50) {
+            produz_refrigerante;
+
+            guarda_refrigerante;
+            semaforo_up(qtdeRefrigerante);
+        }
+
+        semaforo_up(mutex);
+        acorda(Camaleao);
+    }
+}
+
+Camaleao {
+    while (true) {
+        if (qtdeRefrigerante < 50) {
+            dormir();
+        }
+    
+        semaforo_down(mutex);
+        recolhe_refrigerante;
+        leva_refrigerante;
+        while (qtdeRefrigerante > 50) {
+            descarrega_refrigerante;
+            semaforo_down(qtdeRefrigerante);
+        }
+    
+        semaforo_up(mutex);
+        acorda(Hiena);
+    }
+}

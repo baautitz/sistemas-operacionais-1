@@ -1,0 +1,13 @@
+{
+  "name": "sistemas-operacionais",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "ShortestJobFirst.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
